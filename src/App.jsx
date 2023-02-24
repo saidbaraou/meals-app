@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import reactLogo from './assets/react.svg';
 import Favorites from './components/Favorites';
 import Meals from './components/Meals';
@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <main>
+        <Search />
         <Favorites />
         <Meals />
         <Modal />
-        <Search />
       </main>
     </div>
   );
