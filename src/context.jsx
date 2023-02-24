@@ -1,8 +1,7 @@
 import { createContext, useContext, useEffect } from 'react';
 
 const AppContext = createContext();
-const allMealsUrl =
-  'https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata';
+const allMealsUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?s=a';
 const randomMealUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
 
 const AppProvider = ({ children }) => {
