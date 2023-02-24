@@ -1,22 +1,23 @@
 import { createContext, useContext, useEffect } from 'react';
+import axios from 'axios';
 
 const AppContext = createContext();
+
 const allMealsUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?s=a';
 const randomMealUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
 
 const AppProvider = ({ children }) => {
-  const fetchData = async () => {
+  const fetchMeals = async (url) => {
     try {
-      const res = await fetch('https://randomuser.me/api');
-      const data = await res.json();
+      const { data } = await axios(url);
       console.log(data);
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error.response);
     }
   };
 
   useEffect(() => {
-    fetchData();
+    fetchMeals(allMealsUrl);
   }, []);
 
   return (
