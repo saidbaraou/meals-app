@@ -27,7 +27,9 @@ const AppProvider = ({ children }) => {
   }, []);
 
   return (
-    <AppContext.Provider value={{ meals }}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ meals, loading }}>
+      {children}
+    </AppContext.Provider>
   );
 };
 
