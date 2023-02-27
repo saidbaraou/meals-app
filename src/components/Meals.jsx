@@ -6,10 +6,10 @@ const Meals = () => {
   return (
     <section className="section-center">
       {meals.map((meal) => {
-        const { idMeal, strMeal: title, strMealThumb: image } = meal;
+        const { idMeal: id, strMeal: title, strMealThumb: image } = meal;
         return (
-          <article key={idMeal} className="single-meal">
-            <img src={image} style={{ width: '200px' }} className="img" />
+          <article key={id} className="single-meal">
+            <img src={image} className="img" />
             <footer>
               <h5>{title}</h5>
               <button className="like-btn">Click me</button>
