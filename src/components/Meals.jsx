@@ -3,6 +3,7 @@ import { FiThumbsUp } from 'react-icons/fi';
 
 const Meals = () => {
   const { meals } = useGlobalContext();
+  const loading = useGlobalContext();
 
   return (
     <section className="section-center">
