@@ -1,4 +1,5 @@
 import { useGlobalContext } from '../context';
+import { FiThumbsUp } from 'react-icons/fi';
 
 const Meals = () => {
   const { meals } = useGlobalContext();
@@ -12,7 +13,9 @@ const Meals = () => {
             <img src={image} className="img" />
             <footer>
               <h5>{title}</h5>
-              <button className="like-btn">Click me</button>
+              <button className="like-btn">
+                <FiThumbsUp />
+              </button>
             </footer>
           </article>
         );
