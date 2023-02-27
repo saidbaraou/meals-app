@@ -12,6 +12,13 @@ const Meals = () => {
     );
   }
 
+  if (meals.length < 1) {
+    return (
+      <section className="section">
+        <h3>No items found</h3>
+      </section>
+    );
+  }
   return (
     <section className="section-center">
       {meals.map((meal) => {
