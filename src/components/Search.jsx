@@ -10,7 +10,7 @@ const Search = () => {
         <button className="btn" type="submit">
           Search
         </button>
-        <button className="btn btn-hipster" type="btn">
+        <button className="btn btn-hipster" type="button ">
           Surprise me !
         </button>
       </form>
