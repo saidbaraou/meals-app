@@ -27,6 +27,11 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    fetchMeals(allMealsUrl);
+  }, []);
+
+  useEffect(() => {
+    if (!searchTerm) return;
     fetchMeals(`${allMealsUrl}${searchTerm}`);
   }, [searchTerm]);
 
