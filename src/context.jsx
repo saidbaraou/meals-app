@@ -36,6 +36,10 @@ const AppProvider = ({ children }) => {
     setShowModal(true);
   };
 
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   useEffect(() => {
     fetchMeals(allMealsUrl);
   }, []);
@@ -55,6 +59,7 @@ const AppProvider = ({ children }) => {
         showModal,
         selectMeal,
         selectedMeal,
+        closeModal,
       }}
     >
       {children}
