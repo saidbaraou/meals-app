@@ -1,7 +1,7 @@
-import { useGlobalContext } from '../context';
+// import { useGlobalContext } from '../context';
 
 const Favorites = () => {
-  return <h1>Favorites Component</h1>;
+  return <section className="favorites">Favorites Component</section>;
 };
 
 export default Favorites;
