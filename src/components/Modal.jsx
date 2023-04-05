@@ -21,7 +21,9 @@ const Modal = () => {
           <a href={source} target="_blank">
             Original Source
           </a>
-          <button onClick={closeModal}>Close</button>
+          <button className="btn btn-hipster close-btn" onClick={closeModal}>
+            Close
+          </button>
         </div>
         {/* <h1>{selectedMeal.strMeal}</h1> */}
       </div>
