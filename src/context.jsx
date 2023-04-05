@@ -14,6 +14,8 @@ const AppProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedMeal, setSelectedMeal] = useState(null);
 
+  const [favorites, setFavorites] = useState([]);
+
   const fetchMeals = async (url) => {
     setLoading(true);
     try {
@@ -39,6 +41,9 @@ const AppProvider = ({ children }) => {
   const closeModal = () => {
     setShowModal(false);
   };
+
+  const addToFavorites = (idMeal) => {};
+  const removeFromFavorites = (idMeal) => {};
 
   useEffect(() => {
     fetchMeals(allMealsUrl);
