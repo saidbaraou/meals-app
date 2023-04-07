@@ -5,21 +5,24 @@ const Favorites = () => {
   return (
     <section className="favorites">
       <div className="favorites-content">
-        {favorites.map((item) => {
-          const { idMeal: id, strMealThumb: image } = item;
+        <h5>Favorites</h5>
+        <div className="favorites-container">
+          {favorites.map((item) => {
+            const { idMeal, strMealThumb: image } = item;
 
-          return (
-            <div key={id} className="favorite-item">
-              <img src={image} className="favorites-img img" />
-              <button
-                className="remove-btn"
-                onClick={() => removeFromFavorites(id)}
-              >
-                Remove
-              </button>
-            </div>
-          );
-        })}
+            return (
+              <div key={idMeal} className="favorite-item">
+                <img src={image} className="favorites-img img" />
+                <button
+                  className="remove-btn"
+                  onClick={() => removeFromFavorites(idMeal)}
+                >
+                  Remove
+                </button>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
