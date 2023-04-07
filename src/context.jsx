@@ -48,11 +48,13 @@ const AppProvider = ({ children }) => {
     const meal = meals.find((meal) => meal.idMeal === idMeal);
     const updatedFavorites = [...favorites, meal];
     setFavorites(updatedFavorites);
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
   const removeFromFavorites = (idMeal) => {
     const updatedFavorites = favorites.filter((meal) => meal.idMeal !== idMeal);
     setFavorites(updatedFavorites);
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
   useEffect(() => {
@@ -75,9 +77,9 @@ const AppProvider = ({ children }) => {
         showModal,
         selectMeal,
         selectedMeal,
+        favorites,
         addToFavorites,
         removeFromFavorites,
-        favorites,
       }}
     >
       {children}
