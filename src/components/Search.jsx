@@ -31,7 +31,7 @@ const Search = () => {
           type="text"
           onChange={handleChange}
           value={text}
-          placeholder="Search a meal"
+          placeholder="Search for a meal"
         ></input>
         <button className="btn" type="submit">
           Search
