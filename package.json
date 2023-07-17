@@ -1,6 +1,7 @@
 {
   "name": "meals-app",
-  "private": true,
+  "homepage": "https://baraousaid.github.io/meals-app/",
+  // "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
