@@ -9,15 +9,13 @@ const randomMealUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
 const getFavoritesFromLocalStorage = () => {
   let favorites = localStorage.getItem('favorites');
 
-  if(favorites){
-    favorites = JSON.parse(localStorage.getItem('favorites');
-)
-  }
-  else{
-    favorites = []
+  if (favorites) {
+    favorites = JSON.parse(localStorage.getItem('favorites'));
+  } else {
+    favorites = [];
   }
 
-  return favorites
+  return favorites;
 };
 
 const AppProvider = ({ children }) => {
@@ -28,7 +26,7 @@ const AppProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedMeal, setSelectedMeal] = useState(null);
 
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState(getFavoritesFromLocalStorage());
 
   const fetchMeals = async (url) => {
     setLoading(true);
