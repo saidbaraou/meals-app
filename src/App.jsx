@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import { useGlobalContext } from './context';
-import reactLogo from './assets/react.svg';
+import { Routes, Route } from 'react-router-dom';
 import Favorites from './components/Favorites';
 import Meals from './components/Meals';
 import Modal from './components/Modal';
