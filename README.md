@@ -1,16 +1,19 @@
 # React Meals App
 
-Ce projet est une application web réactive développée en utilisant React pour offrir aux utilisateurs une expérience fluide de navigation.
+This project is a responsive web application developed using React to provide users with a smooth browsing experience.
 
-**Fonctionnalités Clés :**
+**Key Features:**
 
-* Parcourir une variété de délicieux repas.
-* Afficher les détails et les descriptions des repas.
-* Construit avec une base de code React moderne et stylisé Tailwind CSS.
-* Utilise Vite pour un développement rapide.
+* Browse a variety of delicious meals.
+* Display meal details and descriptions.
+* Built with a modern React codebase and styled with Tailwind CSS.
+* Utilizes Vite for rapid development.
 
-**Technologies Utilisées :**
+**Technologies Used:**
 
-* React
-* Vite
-* Modules CSS (Tailwind CSS)
+![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![image](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![image](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+
+
