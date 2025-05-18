@@ -7,6 +7,7 @@ A delightful web application to explore a variety of delicious meals. Discover n
 * **Detailed Recipes:** Access complete ingredient lists and step-by-step instructions for each meal.
 * **Search Functionality:** Quickly find specific meals using keywords.
 * **Categorized Meals:** Explore meals based on different categories (e.g., cuisine, dietary restrictions).
+* **Save Favorite Meals:** Easily find your favorite meals.
 
 🚀 **Demo**  
 [View the live demo here](https://saidbaraou.github.io/meals-app/)
