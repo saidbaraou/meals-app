@@ -9,7 +9,7 @@ Search Functionality: Quickly find specific meals using keywords.
 Categorized Meals: Explore meals based on different categories (e.g., cuisine, dietary restrictions).
 
 🚀 Demo
-View the live demo here
+[View the live demo here](https://saidbaraou.github.io/meals-app/)
 
 🛠️ Technologies Used
 
