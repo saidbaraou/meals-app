@@ -8,7 +8,8 @@ Detailed Recipes: Access complete ingredient lists and step-by-step instructions
 Search Functionality: Quickly find specific meals using keywords.
 Categorized Meals: Explore meals based on different categories (e.g., cuisine, dietary restrictions).
 
-🚀 Demo
+🚀 Demo  
+
 [View the live demo here](https://saidbaraou.github.io/meals-app/)
 
 🛠️ Technologies Used
